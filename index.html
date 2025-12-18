@@ -45,6 +45,20 @@
       </header>
       
       <section class="text-gray-600 body-font">
+        <div class="text-center mb-16 px-4 sm:px-6 lg:px-8">
+          <h1 class="sm:text-4xl text-2xl font-semibold title-font text-gray-900 mb-4">
+            Welcome to Admin Dashboard
+          </h1>
+        
+          <p class="text-base sm:text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 mt-2">
+            Manage service requests, assign technicians, track service progress, and monitor payments
+            efficiently from one centralized admin panel.
+          </p>
+        
+          <div class="flex mt-6 justify-center">
+            <div class="w-20 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+          </div>
+        </div>
         <div class="flex flex-wrap -m-4">
           <div class="p-4 md:w-1/4">
             <div class="flex rounded-lg h-full bg-gray-100 p-6 flex-col">
@@ -213,13 +227,13 @@
         <div class="container px-5 py-16 mx-auto">
           <div class="mb-8">
             <h1 class="text-2xl font-semibold text-gray-900">
-              Service Request Management
+               Recent Service Request 
             </h1>
             <p class="text-sm text-gray-500 mt-1">
               Centralized dashboard to track, assign, and manage all customer service requests
             </p>
           </div>
-          <div class="lg:w-4/5 w-full mx-auto overflow-auto border border-gray-200 rounded-lg">
+          <div class="lg:w-4/5 w-full mx-auto overflow-auto border border-black-200 rounded-lg bg-white shadow-sm">
             <table class="table-auto w-full text-left whitespace-no-wrap">
               <thead>
                 <tr>
@@ -233,6 +247,9 @@
                     Service Type
                   </th>
                   <th class="px-4 py-3 font-medium text-gray-900 text-sm bg-gray-100">
+                    Date
+                  </th>
+                  <th class="px-4 py-3 font-medium text-gray-900 text-sm bg-gray-100">
                     Status
                   </th>
                   <th class="px-4 py-3 font-medium text-gray-900 text-sm bg-gray-100 rounded-tr text-center">
@@ -240,72 +257,126 @@
                   </th>
                 </tr>
               </thead>
+          
               <tbody>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-4 py-3">SR-201</td>
-                  <td class="px-4 py-3">Rahul Sharma</td>
+                <tr class="hover:bg-gray-50 transition">
+                  <td class="px-4 py-3 font-medium">SR-301</td>
+                  <td class="px-4 py-3">
+                    <div class="w-9 h-9 mr-2 flex items-center justify-center
+                    rounded-full bg-indigo-100 text-indigo-600">
+         <svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5"
+            class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15 19.128a9.38 9.38 0 0 0 2.625.372
+              9.337 9.337 0 0 0 4.121-.952
+              4.125 4.125 0 0 0-7.533-2.493M15 19.128
+              v-.003c0-1.113-.285-2.16-.786-3.07M15
+              19.128v.106A12.318 12.318 0 0 1 8.624
+              21c-2.331 0-4.512-.645-6.374-1.766
+              l-.001-.109a6.375 6.375 0 0 1
+              11.964-3.07M12 6.375a3.375 3.375 0
+              1 1-6.75 0 3.375 3.375 0 0 1
+              6.75 0Zm8.25 2.25a2.625 2.625 0
+              1 1-5.25 0 2.625 2.625 0 0 1
+              5.25 0Z"/>
+          </svg>
+        </div>
+                    Rahul Sharma</td>
                   <td class="px-4 py-3">AC Repair</td>
+                  <td class="px-4 py-3 text-sm text-gray-500">18 Dec 2025</td>
                   <td class="px-4 py-3">
                     <span class="px-3 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700">
                       Requested
                     </span>
                   </td>
                   <td class="px-4 py-3 text-center">
-                    <button class="text-indigo-500 hover:underline text-sm mr-3">
-                      👁 View
-                    </button>
-                    <button class="text-green-600 hover:underline text-sm">
-                      ➕ Assign
-                    </button>
+                    <button class="text-indigo-500 hover:underline text-sm mr-3">👁 View</button>
+                    <button class="text-green-600 hover:underline text-sm">➕ Assign</button>
                   </td>
                 </tr>
-                <tr class="border-t hover:bg-gray-50">
-                  <td class="px-4 py-3">SR-202</td>
-                  <td class="px-4 py-3">Anita Patel</td>
+
+                <tr class="border-t hover:bg-gray-50 transition">
+                  
+                  <td class="px-4 py-3 font-medium">SR-302</td>
+                  <td class="px-4 py-3">
+                    <div class="w-9 h-9 mr-2 flex items-center justify-center
+                    rounded-full bg-indigo-100 text-indigo-600">
+         <svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5"
+            class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15 19.128a9.38 9.38 0 0 0 2.625.372
+              9.337 9.337 0 0 0 4.121-.952
+              4.125 4.125 0 0 0-7.533-2.493M15 19.128
+              v-.003c0-1.113-.285-2.16-.786-3.07M15
+              19.128v.106A12.318 12.318 0 0 1 8.624
+              21c-2.331 0-4.512-.645-6.374-1.766
+              l-.001-.109a6.375 6.375 0 0 1
+              11.964-3.07M12 6.375a3.375 3.375 0
+              1 1-6.75 0 3.375 3.375 0 0 1
+              6.75 0Zm8.25 2.25a2.625 2.625 0
+              1 1-5.25 0 2.625 2.625 0 0 1
+              5.25 0Z"/>
+          </svg>
+        </div>
+                    Vikram Singh</td>
                   <td class="px-4 py-3">Plumbing</td>
+                  <td class="px-4 py-3 text-sm text-gray-500">17 Dec 2025</td>
                   <td class="px-4 py-3">
                     <span class="px-3 py-1 text-xs rounded-full bg-blue-100 text-blue-700">
                       Assigned
                     </span>
                   </td>
                   <td class="px-4 py-3 text-center">
-                    <button class="text-indigo-500 hover:underline text-sm mr-3">
-                      👁 View
-                    </button>
-                    <button class="text-green-600 hover:underline text-sm">
-                      ➕ Assign
-                    </button>
+                    <button class="text-indigo-500 hover:underline text-sm mr-3">👁 View</button>
+                    <button class="text-green-600 hover:underline text-sm">➕ Assign</button>
                   </td>
                 </tr>
-                <tr class="border-t hover:bg-gray-50">
-                  <td class="px-4 py-3">SR-203</td>
-                  <td class="px-4 py-3">Vikram Singh</td>
+          
+                <tr class="border-t hover:bg-gray-50 transition">
+                  <td class="px-4 py-3 font-medium">SR-303</td>
+                  <td class="px-4 py-3">
+                    <div class="w-9 h-9 mr-2 flex items-center justify-center
+                    rounded-full bg-indigo-100 text-indigo-600">
+         <svg viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.5"
+            class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15 19.128a9.38 9.38 0 0 0 2.625.372
+              9.337 9.337 0 0 0 4.121-.952
+              4.125 4.125 0 0 0-7.533-2.493M15 19.128
+              v-.003c0-1.113-.285-2.16-.786-3.07M15
+              19.128v.106A12.318 12.318 0 0 1 8.624
+              21c-2.331 0-4.512-.645-6.374-1.766
+              l-.001-.109a6.375 6.375 0 0 1
+              11.964-3.07M12 6.375a3.375 3.375 0
+              1 1-6.75 0 3.375 3.375 0 0 1
+              6.75 0Zm8.25 2.25a2.625 2.625 0
+              1 1-5.25 0 2.625 2.625 0 0 1
+              5.25 0Z"/>
+          </svg>
+        </div>
+                    Vikram Singh</td>
                   <td class="px-4 py-3">Electrical</td>
+                  <td class="px-4 py-3 text-sm text-gray-500">16 Dec 2025</td>
                   <td class="px-4 py-3">
                     <span class="px-3 py-1 text-xs rounded-full bg-green-100 text-green-700">
                       In Progress
                     </span>
                   </td>
                   <td class="px-4 py-3 text-center">
-                    <button class="text-indigo-500 hover:underline text-sm mr-3">
-                      👁 View
-                    </button>
-                    <button class="text-green-600 hover:underline text-sm">
-                      ➕ Assign
-                    </button>
+                    <button class="text-indigo-500 hover:underline text-sm mr-3">👁 View</button>
+                    <button class="text-green-600 hover:underline text-sm">➕ Assign</button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="flex pl-4 mt-6 lg:w-4/5 w-full mx-auto">
-            <a class="text-indigo-500 inline-flex items-center">
-             <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"> View All Requests</button>
-            </a>
-          </div>
+          
         </div>
       </section>
-      <section class="text-gray-600 body-font">
+      <!-- <section class="text-gray-600 body-font">
         <div class="container px-5 py-16 mx-auto">
           <div class="mb-8">
             <h1 class="text-2xl font-semibold text-gray-900">
@@ -489,7 +560,7 @@
             </table>
           </div>
         </div>
-      </section>
+      </section> -->
       <footer class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
